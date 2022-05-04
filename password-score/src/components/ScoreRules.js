@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const ScoreRules = () => {
     return (
       <div>
@@ -42,7 +44,9 @@ const ScoreRules = () => {
               <br></br>
               bobbobbob1!2@3# = 7 / 7
           </p>
-      </div>)
+          <Link to='/'>Back to home page</Link>
+      </div>
+    )
 
 }
 

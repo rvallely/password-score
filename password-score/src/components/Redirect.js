@@ -1,5 +1,12 @@
+import { Link } from 'react-router-dom';
+
 const Redirect = () => {
-    return <p>page doesn't exist</p>
+    return (
+        <div>
+            <p>Whoops 🙃, looks like this page doesn't exist</p>
+            <Link to='/'>Back to home page</Link>
+        </div>
+    ) 
 }
 
 export default Redirect;

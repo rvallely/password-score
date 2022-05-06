@@ -5,18 +5,13 @@ import Links from './Links';
 
 const PasswordInput = () => {
     const [password, setPassword] = useState('');
-    const [score, setScore] = useState(0);
+    const [score, setScore] = useState({total: 0});
     const [isChecked, setIsChecked] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('submitting', password)
         const userScore = getScore(password);
-        console.log(userScore);
         setScore(userScore)
-        // send pass to be scored
-        // reveal score 
-        
     }
 
     const changePasswordVisibility = () => {
@@ -46,10 +41,9 @@ const PasswordInput = () => {
                   checked={isChecked}
                   onChange={changePasswordVisibility}
                 /> 
-                {/* {console.log('pass >>> ', password)} */}
                 <button type='submit'>GO</button>
             </form>
-            <h2>Score is: {score} / 7</h2>
+            <h2>Score is: {score.total} / 15</h2>
             <Tips props={{score, setPassword, setIsChecked, setScore}}/>
             <Links />
         </div>

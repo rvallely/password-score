@@ -29,7 +29,7 @@ const PasswordInput = () => {
         setIsChecked(!isChecked);
     };
     return (
-        <div>
+        <div className='container'>
             <form 
               className='form'
               onSubmit={handleSubmit}>

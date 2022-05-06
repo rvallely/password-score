@@ -5,3 +5,7 @@
 .reset {
   text-decoration: underline;
 }
+
+.container {
+  border: pink solid 1px;
+}

@@ -1,8 +1,18 @@
 import { Link } from 'react-router-dom';
 
 const ScoreRules = () => {
+  //style={{fontSize: '30px'}}
     return (
       <div>
+        <Link className='btn btn-success text-right position-absolute top-0 end-0 m-0 py-0' to='/' style={{fontSize: '23px'}}>⌂</Link>
+        <div className='mt-5 text-center'>
+          {/* <button className='btn text-right position-absolute top-0 end-0' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+
+</button> */}
+{/* <Link className='btn btn-primary text-right position-absolute top-0 end-0 m-0 py-0' to='/' style={{fontSize: '30px'}}>⌂</Link> */}
+{/* <button class='btn btn-primary' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+⇤⇥
+</button> */}
           <h2>How We Score</h2>
           <p>
               Everyone starts with 0. The maximum score is 7.
@@ -44,8 +54,9 @@ const ScoreRules = () => {
               <br></br>
               bobbobbob1!2@3# = 7 / 7
           </p>
-          <Link to='/'>Back to home page</Link>
       </div>
+      </div>
+      
     )
 
 }

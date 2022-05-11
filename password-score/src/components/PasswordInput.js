@@ -31,7 +31,7 @@ const PasswordInput = () => {
                 <div className='col-12'>
                   <input
                     id='password'
-                    className='form-control'
+                    className='form-control mt-5'
                     type='password'
                     placeholder='Type your password here ...'
                     value={password}

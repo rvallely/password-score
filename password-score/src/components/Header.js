@@ -1,5 +1,10 @@
 const Header = () => {
-    return <h1 className='display-3 text-center mt-4 mb-3'>Password Score</h1>
+    return (
+        <div>
+            <h1 className='display-3 text-center mt-4 mb-3 fixed-top'>Password Score</h1>
+           
+        </div>
+    )
 }
 
 export default Header;

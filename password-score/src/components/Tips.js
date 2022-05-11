@@ -1,7 +1,7 @@
 const Tips = ({ props }) => {
-    console.log('props', props)
+    // console.log('props', props)
     // console.log(typeof setIsChecked)
-    console.log(props.score)
+    // console.log(props.score)
     // console.log('score in tips', score)
     if (props.score.total === 0) {
         return <p className='lead text-center'>Enter a password to get your score.</p>

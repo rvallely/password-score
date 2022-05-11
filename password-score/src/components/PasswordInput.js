@@ -1,7 +1,6 @@
 import { React, useState } from 'react';
 import { getScore } from '../backend/password-score/password-score';
 import Tips from './Tips';
-import Links from './Links';
 
 const PasswordInput = () => {
     const [password, setPassword] = useState('');
@@ -11,6 +10,7 @@ const PasswordInput = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const userScore = getScore(password);
+        console.log('user\'s score ', userScore)
         setScore(userScore)
     }
 
@@ -54,7 +54,6 @@ const PasswordInput = () => {
             </form>
             <h2 className='display-5 text-center mt-4'>Score is: {score.total} / 15</h2>
             <Tips props={{score, setPassword, setIsChecked, setScore}}/>
-            <Links />
         </div>
     )
 }

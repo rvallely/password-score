@@ -3,8 +3,8 @@ const Tips = ({ props }) => {
     // console.log(typeof setIsChecked)
     console.log(props.score)
     // console.log('score in tips', score)
-    if (props.score === 0) {
-        return <p>Enter a password to get your score.</p>
+    if (props.score.total === 0) {
+        return <p className='lead text-center'>Enter a password to get your score.</p>
     } else {
         let tips = 'hey';
         if (props.score <= 2) {

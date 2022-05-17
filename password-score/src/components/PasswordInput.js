@@ -46,7 +46,7 @@ const PasswordInput = () => {
                     checked={isChecked}
                     onChange={changePasswordVisibility}
                   /> 
-                  <label className='form-check-label ms-20' for='visibility'>Show/Hide</label>
+                  <label className='form-check-label ms-20' htmlFor='visibility'>Show/Hide</label>
                 </div>
                 <div className='col text-center'>
                   <button className='btn btn-success btn-lg mb 3' type='submit'>GO</button>

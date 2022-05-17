@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     return (
         <div>
-<button class='btn btn-primary' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+<button className='btn btn-primary' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
 ⇤⇥
 </button>
 
-<div className='offcanvas offcanvas-start' tabindex='-1' id='offcanvasExample' aria-labelledby='offcanvasExampleLabel' style={{border: 'solid red', maxWidth: '80%'}}>
+<div className='offcanvas offcanvas-start' tabIndex='-1' id='offcanvasExample' aria-labelledby='offcanvasExampleLabel' style={{border: 'solid red', maxWidth: '80%'}}>
   <div className='offcanvas-header'>
     <h5 className='offcanvas-title mb-0' id='offcanvasExampleLabel'>Useful Links</h5>
     <button type='button' className='btn-close text-reset' data-bs-dismiss='offcanvas' aria-label='Close'></button>
